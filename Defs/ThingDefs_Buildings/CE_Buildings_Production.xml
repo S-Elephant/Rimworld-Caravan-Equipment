@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BenchBase">
+		<defName>LightAlloysWorkbench</defName>
+		<label>light alloys workbench</label>
+		<description>A work station for creating light alloys.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>BenchLightAlloys/LightAlloysBench</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3.5,1.5)</drawSize>
+			<shadowData>
+				<volume>(2.8, 0.3, 0.54)</volume>
+				<offset>(0, 0, -0.18)</offset>
+			</shadowData>
+			<damageData>
+				<rect>(0.3,0,2.7,1)</rect>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<constructEffect>ConstructWood</constructEffect>
+		<costList>
+			<WoodLog>100</WoodLog>
+			<Steel>90</Steel>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>2000</WorkToBuild>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<size>(3,1)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<recipes>
+			<li>Make_LightAlloys</li>
+			<li>Make_LightAlloysBulk</li>
+		</recipes>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>300</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<uiIconPath>BenchLightAlloys/LightAlloysBench_MenuIcon</uiIconPath>
+		<uiIconScale>0.85</uiIconScale>
+		<researchPrerequisites>
+			<li>LightAlloys</li>
+		</researchPrerequisites>
+		<tradeability>None</tradeability>
+	</ThingDef>
+	
+</Defs>

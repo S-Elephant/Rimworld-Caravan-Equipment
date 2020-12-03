@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>LightAlloy</defName>
+		<label>light alloy</label>
+		<description>Light alloys have a low density and high a strength-to-weight ratio. They are generally characterized by their low toxicity in comparison to heavy metals.</description>
+		<graphicData>
+			<texPath>LightAlloy1</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>1.0</drawSize>
+		</graphicData>
+		<stackLimit>150</stackLimit>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>28</MarketValue>
+			<Mass>0.01</Mass>
+			<Flammability>0</Flammability>
+			<DeteriorationRate>0</DeteriorationRate>
+		</statBases>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+	</ThingDef>
+	
+</Defs>

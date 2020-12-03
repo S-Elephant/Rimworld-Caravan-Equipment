@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <!--<EGB_ModName>Endgame Buildings</EGB_ModName>-->
+  
+  <!-- Settings -->
+  <SECE_SettingsCategory>Caravan Equipment</SECE_SettingsCategory>
+  <SECE_AlloyCost>alloy cost</SECE_AlloyCost>
+  <SECE_Mass>mass</SECE_Mass>
+  
+  <SECE_LAHospitalBedStats>light alloy hospital bed stats:</SECE_LAHospitalBedStats>
+  <SECE_BedRestEff>bed rest effectiveness</SECE_BedRestEff>
+  <SECE_ImmunityGainSpeedFactor>immunity gain speed factor</SECE_ImmunityGainSpeedFactor>
+  <SECE_MedicalTendQualityOffset>medical tend quality offset</SECE_MedicalTendQualityOffset>
+  <SECE_SurgerySuccessChanceFactor>Surgery Success Chance Factor</SECE_SurgerySuccessChanceFactor>
+  
+  <SECE_ItemName>item name</SECE_ItemName>
+  <SECE_PPowerGenAmount>portable power generator generation amount</SECE_PPowerGenAmount>
+  
+</LanguageData>

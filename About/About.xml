@@ -1,0 +1,38 @@
+<ModMetaData>
+	<name>Caravan Equipment</name>
+	<author>Squirting Elephant</author>
+	<supportedVersions>
+		<li>1.1</li>
+		<li>1.2</li>
+	</supportedVersions>
+	<packageId>SquirtingElephant.CaravanEquipment</packageId>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+	</loadAfter>
+	<description>Adds new lightweight stuff for caravans aimed at players using the Setup Camp mod.
+	
+I had some cases where my bigger caravans got hit by stuff like the plague and I was unable to rescue my colonists due to lack of decent beds and such. Now I can equip my caravans properly. I made this mod for myself but oh well why not release it for everybody right?
+	
+- Must be researched.
+- Mod is XML only and overwrites nothing. This is an extremely compatible mod.
+- Can safely be added to an existing game.
+- Before removing this mod from an existing game, please make sure that you destroyed all structures from this mod first, stop any research in progress from this mod and that you are not ordering the creation of new structures from this mod and destroyed all Light Alloys and possible unfinished Light Alloys. Also make sure that you destroyed any minified structures from this mod.
+- Please also use https://steamcommunity.com/sharedfiles/filedetails/?id=1470065926 to make the most out of this mod (not required).
+		
+New manufactured resource:
+- Light Alloy (made from steel and plasteel)
+	
+New structures:
+- Light allow workbench.
+- Light alloy table.
+- Light alloy dining Chair.
+- Light alloy hospital Bed.
+- Light alloy miniTurret.
+- Light alloy wood-fired generator (with built-in battery).
+- Light alloy cooler.
+- Light alloy heater.
+
+Credits:
+- LightAlloyUnfinished.png: jabbamonkey.</description>
+</ModMetaData>

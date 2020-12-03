@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CELA_BuildingBase">
+	   <defName>LA_WoodFiredGenerator</defName>
+	   <label>light alloy wood-fired generator</label>
+	   <description>Produces power by consuming wood. Must be periodically loaded with wood fuel by hand. Comes with a built-in battery and is much lighter than the regular one. Works outside and doesn't break down.</description>
+	   <graphicData>
+		  <texPath>Things/Building/Power/WoodFiredGenerator</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>(1,1)</drawSize>
+		  <shadowData>
+			 <volume>(0.93,0.75,0.50)</volume>
+			 <offset>(0,0,0)</offset>
+		  </shadowData>
+	   </graphicData>
+	   <passability>PassThroughOnly</passability>
+	   <pathCost>150</pathCost>
+	   <blockWind>true</blockWind>
+	   <fillPercent>1.0</fillPercent>
+	   <castEdgeShadows>false</castEdgeShadows>
+	   <rotatable>false</rotatable>
+	   <statBases>
+		  <MarketValue>140</MarketValue>
+		  <MaxHitPoints>400</MaxHitPoints>
+		  <WorkToBuild>5000</WorkToBuild>
+		  <Flammability>0.5</Flammability>
+		  <Beauty>-10</Beauty>
+		  <Mass>3</Mass>
+	   </statBases>
+	   <tickerType>Normal</tickerType>
+	   <canOverlapZones>false</canOverlapZones>
+	   <size>(1,1)</size>
+	   <costList>
+		  <LightAlloy>5</LightAlloy>
+		  <Steel>150</Steel>
+		  <ComponentIndustrial>3</ComponentIndustrial>
+	   </costList>
+	   <comps>
+		  <li Class="CompProperties_Power">
+			 <compClass>CompPowerPlant</compClass>
+			 <basePowerConsumption>-725</basePowerConsumption>
+			 <transmitsPower>true</transmitsPower>
+		  </li>
+		  <li Class="CompProperties_Flickable" />
+		  <li Class="CompProperties_Refuelable">
+			 <fuelConsumptionRate>30.0</fuelConsumptionRate>
+			 <fuelCapacity>150.0</fuelCapacity>
+			 <fuelFilter>
+				<thingDefs>
+				   <li>WoodLog</li>
+				</thingDefs>
+			 </fuelFilter>
+			 <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+		  </li>
+		  <li Class="CompProperties_Glower">
+			 <glowRadius>3</glowRadius>
+			 <glowColor>(217,112,33,0)</glowColor>
+		  </li>
+		  <li Class="CompProperties_HeatPusher">
+			 <compClass>CompHeatPusherPowered</compClass>
+			 <heatPerSecond>6</heatPerSecond>
+		  </li>
+		  <li Class="CompProperties_Battery">
+			 <storedEnergyMax>300</storedEnergyMax>
+			 <efficiency>0.5</efficiency>
+			 <shortCircuitInRain>false</shortCircuitInRain>
+			 <transmitsPower>true</transmitsPower>
+		  </li>
+	   </comps>
+	   <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+	   <designationCategory>Power</designationCategory>
+	   <constructEffect>ConstructMetal</constructEffect>
+	   <researchPrerequisites>
+		  <li>CaravanEquipment</li>
+		  <li>Electricity</li>
+	   </researchPrerequisites>
+	   <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+	   <minifiedDef>MinifiedThing</minifiedDef>
+	   <tradeability>Sellable</tradeability>
+	</ThingDef>
+
+</Defs>

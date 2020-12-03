@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!--===================================================================== Portable Hospital Bed =====================================================================-->
+	
+	<ThingDef ParentName="BedWithQualityBase">
+		<defName>PortableHospitalBed</defName>
+		<label>light alloy hospital bed</label>
+		<description>A lightweight bed specially designed for use while traveling. Adjustable for a patient and festooned with built-in equipment, it improves medical outcomes over normal beds.</description>
+		<graphicData>
+			<texPath>HospitalBedPortable/PortableHospitalBed</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<thingCategories>
+			<li>BuildingsCaravan</li>
+		</thingCategories>
+		<castEdgeShadows>True</castEdgeShadows>
+		<statBases>
+			<MaxHitPoints>180</MaxHitPoints>
+			<WorkToBuild>2800</WorkToBuild>
+			<Mass>4</Mass>
+			<Flammability>1.0</Flammability>
+			<BedRestEffectiveness>1</BedRestEffectiveness>
+			<Comfort>0.80</Comfort>
+			<ImmunityGainSpeedFactor>1.11</ImmunityGainSpeedFactor>
+			<MedicalTendQualityOffset>0.10</MedicalTendQualityOffset>
+			<SurgerySuccessChanceFactor>1.1</SurgerySuccessChanceFactor>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>VitalsMonitor</li>
+					<li>EndTable</li>
+					<li>Dresser</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<size>(1,2)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>20</costStuffCount>
+		<costList>
+			<LightAlloy>12</LightAlloy>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<building>
+			<bed_showSleeperBody>False</bed_showSleeperBody>
+			<bed_healPerDay>10</bed_healPerDay>
+			<bed_defaultMedical>true</bed_defaultMedical>
+		</building>
+		<fillPercent>0.4</fillPercent>
+		<pathCost>60</pathCost>
+		<leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
+		<staticSunShadowHeight>0.17</staticSunShadowHeight>
+		<researchPrerequisites>
+			<li>CaravanEquipment</li>
+		</researchPrerequisites>
+		<techLevel>Industrial</techLevel>
+		<uiIconScale>0.9</uiIconScale>
+		<tradeability>None</tradeability>
+	</ThingDef>
+	
+	<!--===================================================================== Portable Table =====================================================================-->
+	
+	<ThingDef ParentName="TableGatherSpotBase">
+		<defName>PortableTable1x2c</defName>
+		<label>light alloy table (1x2)</label>
+		<description>People eat off tables when chairs are placed facing them. This table is lighter than a regular table of the same size.</description>
+		<graphicData>
+			<texPath>TablePortable/PortableTable</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,2)</drawSize>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<thingCategories>
+			<li>BuildingsCaravan</li>
+		</thingCategories>
+		<statBases>
+			<MaxHitPoints>220</MaxHitPoints>
+			<WorkToBuild>750</WorkToBuild>
+			<Mass>1</Mass>
+			<Flammability>0</Flammability>
+			<Beauty>1</Beauty>
+		</statBases>
+		<size>(1,2)</size>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>10</costStuffCount>
+		<costList>
+			<LightAlloy>12</LightAlloy>
+		</costList>
+		<researchPrerequisites>
+			<li>CaravanEquipment</li>
+		</researchPrerequisites>
+		<techLevel>Industrial</techLevel>
+		<uiIconPath>TablePortable/PortableTable_MenuIcon</uiIconPath>
+		<uiIconScale>0.8</uiIconScale>
+		<tradeability>None</tradeability>
+	</ThingDef>
+	
+	<!--===================================================================== Dining Chairs =====================================================================-->
+	
+	<ThingDef ParentName="ArtableFurnitureBase">
+		<defName>PortableDiningChair</defName>
+		<label>light alloy dining chair</label>
+		<description>A lightweight dining chair. Meant for eating at table while traveling.</description>
+		<graphicData>
+			<texPath>DiningChairPortable/PortableDiningChair</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,1)</drawSize>
+			<damageData>
+				<rectN>(0.25,0.234375,0.5,0.28125)</rectN>
+				<rectS>(0.25,0.234375,0.5,0.28125)</rectS>
+				<rectE>(0.28125,0.25,0.453125,0.25)</rectE>
+				<rectW>(0.28125,0.25,0.453125,0.25)</rectW>
+			</damageData>
+			<shadowData>
+				<volume>(0.23, 0.26, 0.23)</volume>
+			</shadowData>
+		</graphicData>
+		<thingCategories>
+			<li>BuildingsCaravan</li>
+		</thingCategories>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+			<MaxHitPoints>180</MaxHitPoints>
+			<WorkToBuild>5000</WorkToBuild>
+			<Mass>0.1</Mass>
+			<Flammability>0</Flammability>
+			<Beauty>4</Beauty>
+			<Comfort>0.55</Comfort>
+		</statBases>
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>5</costStuffCount>
+		<costList>
+			<LightAlloy>3</LightAlloy>
+		</costList>
+		<pathCost>30</pathCost>
+		<fillPercent>0.35</fillPercent>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<building>
+			<isSittable>true</isSittable>
+		</building>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<researchPrerequisites>
+			<li>CaravanEquipment</li>
+		</researchPrerequisites>
+		<tradeability>None</tradeability>
+	</ThingDef>
+	
+	<!--===================================================================== End =====================================================================-->
+	
+</Defs>

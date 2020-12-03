@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+	<LightAlloy.label>light alloy</LightAlloy.label>
+	<LightAlloy.description>Light alloys have a low density and high a strength-to-weight ratio. They are generally characterized by their low toxicity in comparison to heavy metals.</LightAlloy.description>
+	
+	<UnfinishedLightAlloy.label>unfinished light alloy</UnfinishedLightAlloy.label>
+
+	<PortableHospitalBed.label>light alloy hospital bed</PortableHospitalBed.label>
+	<PortableHospitalBed.description>A lightweight bed specially designed for use while traveling. Adjustable for a patient and festooned with built-in equipment, it improves medical outcomes over normal beds.</PortableHospitalBed.description>
+  
+	<PortableTable1x2c.label>light alloy table (1x2)</PortableTable1x2c.label>
+	<PortableTable1x2c.description>People eat off tables when chairs are placed facing them. This table is lighter than a regular table of the same size.</PortableTable1x2c.description>
+	
+	<PortableDiningChair.label>light alloy dining chair</PortableDiningChair.label>
+	<PortableDiningChair.description>A lightweight dining chair. Meant for eating at table while traveling.</PortableDiningChair.description>
+	
+	<LA_WoodFiredGenerator.label>light alloy wood-fired generator</LA_WoodFiredGenerator.label>
+	<LA_WoodFiredGenerator.description>Produces power by consuming wood. Must be periodically loaded with wood fuel by hand. Comes with a built-in battery and is much lighter than the regular one. Works outside and doesn't break down.</LA_WoodFiredGenerator.description>
+	
+	<CELA_Turret_MiniTurret.label>light alloy mini-turret</CELA_Turret_MiniTurret.label>
+	<CELA_Turret_MiniTurret.description>A lightweight portable automatic turret used for caravan protection. Requires power. Requires steel to refurbish its barrel after heavy use. May explode when damaged. Its dumb AI brain can't be directly controlled, so beware of friendly fire. Doesn't break down and doesn't explode.</CELA_Turret_MiniTurret.description>
+  
+	<PortableHeater.label>light alloy heater</PortableHeater.label>
+	<PortableHeater.description>A lightweight device that converts electricity into heat. It can automatically turn itself on or off to reach a specific target temperature. Does not break down.</PortableHeater.description>
+	
+	<PortableCooler.label>light alloy cooler</PortableCooler.label>
+	<PortableCooler.description>A lightweight air-cooling machine that fits into a wall. Cool air comes out one side, while hot exhaust comes out the other. Can be used to cool down rooms during summer, or to create a walk-in freezer. Does not break down.</PortableCooler.description>
+  
+</LanguageData>
